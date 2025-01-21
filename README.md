@@ -1,4 +1,3 @@
-
 # Exploratory Data Analysis (EDA) Project: Online Retail Dataset
 
 ## Project Overview
@@ -67,6 +66,30 @@ This project involves performing Exploratory Data Analysis (EDA) on the Online R
 
 ---
 
+## Key Findings
+1. **Data Cleaning and Preparation**:
+   - Removed rows with missing `Description` values (~0.42% of the data).
+   - Addressed duplicate records, eliminating 196 duplicate rows.
+   - Added a derived column `TotalSales` to calculate total revenue for each transaction.
+
+2. **Sales Trends**:
+   - Daily sales trends highlighted consistent patterns with occasional spikes, potentially due to seasonal events or promotions.
+   - A detailed time-series plot revealed peak sales periods.
+
+3. **Product Performance**:
+   - Identified the top 10 products by revenue. These products significantly contributed to the total sales, with some high-priced items leading in revenue despite lower quantities sold.
+   - Created a bar chart to visually represent the top-performing products.
+
+4. **Anomalies**:
+   - Investigated anomalies where high quantities sold resulted in low total revenue. These anomalies were attributed to low-priced products sold in bulk, such as small decorations or accessories.
+   - Detailed transaction-level analysis uncovered specific examples of such anomalies, providing insights into bulk sales dynamics.
+
+5. **Insights**:
+   - High-priced, low-quantity items are key revenue drivers.
+   - Bulk sales with low unit prices contribute less to revenue but represent significant volumes.
+
+---
+
 ## Deliverables
 1. Cleaned dataset.
 2. Visualizations highlighting key insights.
@@ -94,3 +117,4 @@ This project involves performing Exploratory Data Analysis (EDA) on the Online R
 
 ## Author
 This project is part of my portfolio building as a Data Analyst/Data Scientist.
+
